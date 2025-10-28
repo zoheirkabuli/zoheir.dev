@@ -1,0 +1,15 @@
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-secondary);
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 14px;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+    font-size: 12px;
+  }
+}
