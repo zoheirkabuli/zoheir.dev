@@ -15,14 +15,14 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Zoheir Kabuli | DevOps Engineer",
   description:
-    "Zoheir Kabuli is a DevOps Engineer with a passion for building scalable and efficient systems.",
+    "DevOps Engineer with a passion for building scalable and efficient systems.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
     title: "Zoheir Kabuli | DevOps Engineer",
     description:
-      "Zoheir Kabuli is a DevOps Engineer with a passion for building scalable and efficient systems.",
+      "DevOps Engineer with a passion for building scalable and efficient systems.",
   },
 };
 
