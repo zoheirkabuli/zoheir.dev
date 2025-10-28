@@ -1,36 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# zoheir.dev
 
-## Getting Started
+Modern portfolio website built with Next.js, TypeScript, and CSS Modules. Features a clean, developer-focused design with smooth animations and full responsiveness.
 
-First, run the development server:
+## 🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** CSS Modules
+- **Fonts:** Inter & JetBrains Mono
+- **Runtime:** Bun
+
+## ✨ Features
+
+- 🎨 Modern, terminal-inspired design
+- 📱 Fully responsive across all devices
+- ⚡ Smooth scrolling and animations
+- 🧩 Modular component architecture
+- 🔧 TypeScript interfaces ready for API integration
+- 🎯 SEO optimized with metadata
+- 🌙 Dark theme with custom color palette
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root layout with fonts and metadata
+│   └── page.tsx            # Main page with data objects
+├── components/
+│   ├── about/              # About section
+│   ├── contact/            # Contact section with links
+│   ├── experience/         # Timeline-based experience
+│   ├── footer/             # Footer component
+│   ├── header/             # Navigation with mobile menu
+│   ├── hero/               # Hero section with animations
+│   └── skills/             # Skills grid with categories
+├── styles/
+│   └── globals.css         # Global styles and CSS variables
+├── types/
+│   └── portfolio.ts        # TypeScript interfaces
+└── utils/
+    └── smoothScroll.ts     # Smooth scroll utility
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+ or Bun
+- Git
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Clone the repository
+git clone https://github.com/zoheirkabuli/zoheir.dev.git
+cd zoheir.dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Install dependencies
+bun install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Run development server
+bun run dev
+```
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All content is managed through data objects in `src/app/page.tsx`. Update these objects to customize your portfolio:
+
+- `heroData` - Hero section content
+- `aboutData` - About section paragraphs
+- `skillsData` - Skills categories and tags
+- `experienceData` - Work experience timeline
+- `contactData` - Contact information and links
+
+### Example:
+
+```typescript
+const heroData: HeroData = {
+  greeting: "$ whoami",
+  name: "Your Name",
+  title: "Your Title",
+  // ...
+};
+```
+
+## 🔄 API Integration
+
+The project is structured for easy API integration. TypeScript interfaces in `src/types/portfolio.ts` define the data structure. To integrate with an API:
+
+1. Create API routes in `src/app/api/`
+2. Fetch data in `page.tsx` using `async/await`
+3. Pass fetched data to components as props
+
+## 🎨 Styling
+
+The project uses CSS Modules for component-scoped styling. Global styles and CSS variables are defined in `src/styles/globals.css`:
+
+```css
+:root {
+  --bg-primary: #0a192f;
+  --bg-secondary: #112240;
+  --text-primary: #ccd6f6;
+  --text-secondary: #8892b0;
+  --accent: #64ffda;
+  --border: #1e2d4d;
+}
+```
+
+## 📦 Build & Deploy
+
+```bash
+# Build for production
+bun run build
+
+# Start production server
+bun run start
+```
+
+### Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zoheirkabuli/zoheir.dev)
+
+## 📄 License
+
+MIT License - feel free to use this project for your own portfolio.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📧 Contact
+
+Zoheir Kabuli - [zoheyrk@gmail.com](mailto:zoheyrk@gmail.com)
+
+Portfolio: [zoheir.dev](https://zoheir.dev)
