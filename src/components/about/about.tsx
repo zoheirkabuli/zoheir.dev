@@ -7,12 +7,12 @@ interface AboutProps {
 
 export default function About({ data }: AboutProps) {
   return (
-    <section id="about" className={styles.about}>
-      <div className={styles.container}>
+    <section id="about" className={styles.about} aria-label="About section">
+      <div className="container">
         <h2 className={styles.sectionTitle}>About</h2>
         <div className={styles.aboutContent}>
           {data.paragraphs.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+            <p key={`about-p-${index}`}>{paragraph}</p>
           ))}
         </div>
       </div>

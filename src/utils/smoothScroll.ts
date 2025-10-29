@@ -1,5 +1,5 @@
 export const initSmoothScroll = () => {
-  if (typeof window === "undefined") return;
+  if (typeof window === "undefined") return () => {};
 
   const handleClick = (e: MouseEvent) => {
     const target = e.target as HTMLElement;
