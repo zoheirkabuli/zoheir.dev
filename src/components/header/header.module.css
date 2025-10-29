@@ -9,7 +9,7 @@
   border-bottom: 1px solid var(--border);
 }
 
-.container {
+.navContainer {
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
@@ -79,7 +79,7 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .navContainer {
     flex-direction: row;
     padding: 15px 20px;
   }
